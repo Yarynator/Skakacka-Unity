@@ -21,6 +21,13 @@ public class PlayerMovement : MonoBehaviour
         position.x += horizontal * Time.deltaTime * 5f;
         player.position = position;
 
+        if(Input.GetKeyDown(KeyCode.A)){
+            player.GetComponent<SpriteRenderer>().flipX = true;
+        } 
+        else if (Input.GetKeyDown(KeyCode.D)){
+            player.GetComponent<SpriteRenderer>().flipX = false;
+        }
+
         Collider2D[] colls = Physics2D.OverlapBoxAll(player.position, player.localScale, 0f);
         foreach (var coll in colls)
         {

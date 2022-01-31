@@ -36,10 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/Win.cs" />
      <Compile Include="Assets/Scripts/Enemy.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/Saw.cs" />
-     <Compile Include="Assets/Scripts/Win.cs" />
+     <Compile Include="Assets/Scripts/Menu.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/mnt/sda1/UnityHub/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

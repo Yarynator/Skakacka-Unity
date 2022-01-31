@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Enemy : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class Enemy : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.transform.position = Vector3.zero; //new Vector3(0, 0, 0);
+            SceneManager.LoadScene(0);
         }
     }
 
